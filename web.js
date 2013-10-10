@@ -17,7 +17,7 @@ app.set('view options', { layout: false });
 // for bots to mine.
 var urlData = [];
 
-// Try to validate the longurl. I don't think what consitutes a valid URL is a simple 
+// Try to validate the longurl. I don't think what constitutes a valid URL is a simple 
 // question. I'll take the easy road and use node-validator, though in practice I'd 
 // want to more thoroughly test it. A better approach might be to require a request 
 // response from the site, though this would mean that any site that is down at the 
@@ -34,7 +34,7 @@ function validateURL(longurl) {
     }
 }
 
-// Make sure any query parameters are stored in sorted order to ensure uniquness.
+// Make sure any query parameters are stored in sorted order to ensure uniqueness.
 function normalizeURL(longurl) {
     var urldata = url.parse(longurl);
     var normurl = urldata['protocol'] + '//'  +urldata['host'] 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<form name="userinfo" action="/"  method="get">
+  <table>
+    <tr><td>Long URL:</td><td><% if(""!=shorturl) { %> <%= longurl %> <% } else { %> <input type="text" name="longurl"><% } %></td></tr>
+    <% if(""!=shorturl) { 
+       var link = host + '/' + shorturl
+    %>
+    <tr><td>Short URL:</td><td><a href='<%= link %>'><%= link %></td></tr>
+    <% } %>
+  </table>
+  <% if(""==shorturl) { %>
+  <input type="submit" value="Shorten">
+  <% } %>
+</form>
+
+<% if(null!=msg && ""!=msg) { %>
+<%= msg %>
+<% } %>
+
+</html>

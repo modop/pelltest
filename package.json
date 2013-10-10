@@ -1,0 +1,14 @@
+{
+  "name": "pelltest",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "2.5.x",
+    "ejs": "0.7.x",
+    "validator": "1.5.x",
+    "url": "0.7.x"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}

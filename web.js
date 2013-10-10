@@ -13,7 +13,7 @@ app.set('view options', { layout: false });
 // Simple global data store. Short URLs are simply the array index of the full URL
 // for simplicity of coding. Depending on the usage it could be better to use the 
 // full set of alpha numeric strings. Also could use a pseudo random generator to 
-// produce an effectively randomized alpha numeric short URLs that would be harder 
+// produce effectively randomized alpha numeric short URLs that would be harder 
 // for bots to mine.
 var urlData = [];
 
